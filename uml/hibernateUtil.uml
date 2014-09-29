@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="hibernateUtil">
+  <packagedElement xmi:type="uml:Package" xmi:id="_OxEgoPWmEeGi2edkzdeBMg" name="hibernateUtil">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_adQa8PWmEeGi2edkzdeBMg" name="IHibernateDAOSupport">
+      <ownedOperation xmi:id="_iFuBIPWmEeGi2edkzdeBMg" name="getSession"/>
+      <ownedOperation xmi:id="_j4UAIvWmEeGi2edkzdeBMg" name="Operation1"/>
+      <ownedOperation xmi:id="_kANX4vWmEeGi2edkzdeBMg" name="Operation2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rTW1YPWmEeGi2edkzdeBMg" name="HibernateDAOSupport" clientDependency="_w-8fM_WmEeGi2edkzdeBMg _abNXFfWnEeGi2edkzdeBMg">
+      <interfaceRealization xmi:id="_w-8fM_WmEeGi2edkzdeBMg" name="InterfaceRealization1" supplier="_adQa8PWmEeGi2edkzdeBMg" client="_rTW1YPWmEeGi2edkzdeBMg" contract="_adQa8PWmEeGi2edkzdeBMg"/>
+      <ownedOperation xmi:id="_tvOa4PWmEeGi2edkzdeBMg" name="getSession"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3iHRQPWmEeGi2edkzdeBMg" name="HibernateSessionFactory">
+      <ownedOperation xmi:id="_-1uBwvWmEeGi2edkzdeBMg" name="getSessionFactory()"/>
+      <ownedOperation xmi:id="_BBfVwPWnEeGi2edkzdeBMg" name="getSession"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hkXyIPWnEeGi2edkzdeBMg" name="TransactionManager" clientDependency="_yk569PWnEeGi2edkzdeBMg">
+      <generalization xmi:id="_mspThPWnEeGi2edkzdeBMg" general="_rTW1YPWmEeGi2edkzdeBMg"/>
+      <ownedAttribute xmi:id="_8rUKQPWnEeGi2edkzdeBMg" name="Object target"/>
+      <interfaceRealization xmi:id="_yk569PWnEeGi2edkzdeBMg" name="InterfaceRealization1" supplier="_pDAG4PWnEeGi2edkzdeBMg" client="_hkXyIPWnEeGi2edkzdeBMg" contract="_pDAG4PWnEeGi2edkzdeBMg"/>
+      <ownedOperation xmi:id="_z4Wf0vWnEeGi2edkzdeBMg" name="invoke"/>
+      <ownedOperation xmi:id="_1gW_cvWnEeGi2edkzdeBMg" name="getProxy" isStatic="true"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_pDAG4PWnEeGi2edkzdeBMg" name="InvocationHandler">
+      <ownedOperation xmi:id="_wIcfkvWnEeGi2edkzdeBMg" name="invoke"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_abNXFfWnEeGi2edkzdeBMg" name="Dependency1" supplier="_3iHRQPWmEeGi2edkzdeBMg" client="_rTW1YPWmEeGi2edkzdeBMg"/>
+</uml:Model>

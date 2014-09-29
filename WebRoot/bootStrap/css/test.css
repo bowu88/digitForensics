@@ -1,0 +1,29 @@
+html, body {
+	min-width:1360px;
+	min-height:300px;
+	scroll:auto;
+}
+
+body {
+	background:url(../images/bg-body.jpg);
+}
+
+#mainbgimage {
+	height:428px;
+	width:100%;
+	padding:0px;
+	margin:50px 0px 0px 0px;
+	background-image:url(../images/bg-home.jpg);
+}
+
+#advertise {
+	margin:120px 50px 50px 100px;
+	height:280px;
+	width:550px;
+}
+
+footer {
+	height:100px;
+	width:100%;
+	margin:0px;
+}

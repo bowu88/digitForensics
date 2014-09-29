@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>管理员</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <link rel='stylesheet' type='text/css' href='/hibernateEdition/css/webfont/youyuan/stylesheet.css'/>
+	<link rel="stylesheet" type="text/css" href="../css/easyUI/theme-paper/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/easyUI/icon.css" />
+	<link rel='stylesheet' type='text/css' href='../css/easyUI/superUser.css' />
+	<link rel="stylesheet" href="../css/superuser/leftMenu/leftMenu.css" type="text/css"></link>
+
+	<script type="text/javascript" src="../js/easyUI/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../js/easyUI/jquery.easyui.min.js"></script>
+	<script type='text/javascript' src='../js/easyUI/myJs/initSuperPage.js'></script>
+	<script type='text/javascript' src='../js/myjs/utils/jqGridUtil.js'></script>
+	<script type='text/javascript' src='../js/myjs/superuser/superuser3.js'></script>
+
+	<script type='text/javascript'>
+		$("#layout").layout();
+		$("#aa").accordion({  
+    		animate:false  
+		});   
+		
+	</script>
+</head>
+  
+  <body onload='fillClassMain();'> 
+ 	<div id='layout' class='easyui-layout'>
+	    <div region="north" split="true" style="height:80px;"></div>  
+	    <div region="south" split="true" style="height:50px;"></div>  
+	    <div region="west" split="true" style="width:250px;">
+			<div id="aa" class="easyui-accordion" style="width:243px;height:503px;">
+				<div title="用户管理" style="overflow:auto;padding:10px;">
+					<ul class="ca-menu">
+						<li>
+							<a class='leftmenu' href="javascript:void(0)" onclick="addTab('用户信息管理','../superuser/iframes/userManage.jsp')">
+								<div class="ca-content">
+                					<span class="ca-main">用户管理</span>
+            					</div>
+							</a>
+						</li>
+						<li>
+							<a class='leftmenu' href="javascript:void(0)" onclick="addTab('用户信息高级管理','http://www.baidu.com')">
+								<div class="ca-content">
+                					<span class="ca-main">高级管理</span>
+            					</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div title="对象管理" style="padding:10px;">
+					<ul class="ca-menu">
+						<li>
+							<a class='leftmenu' href="javascript:void(0)" onclick="addTab('对象信息管理','../superuser/iframes/suspManage.jsp')">
+								<div class="ca-content">
+                					<span class="ca-main">对象信息管理</span>
+            					</div>
+							</a>
+						</li>
+						<li>
+							<a class='leftmenu' href="javascript:void(0)" onclick="addTab('对象信息高级管理','http://www.baidu.com')">
+								<div class="ca-content">
+                					<span class="ca-main">对象信息管理</span>
+            					</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div title="文件分类规则" id='classification' style='overflow:auto'>		
+				</div>
+				<div title="总控端 " style="overflow:auto;padding:10px;">		
+					<ul class="ca-menu">
+						<li>
+							<a class='leftmenu' href="javascript:void(0)" onclick="addTab('进度管理','../superuser/iframes/progressManagement.jsp')">
+								<div class="ca-content">
+                					<span class="ca-main">后台进度管理</span>
+            					</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>  
+	    <div region="center" style="padding:0px;background:#eee;">
+	    	<!-- <a onclick="addTab('hale','http://www.baidu.com')">add</a> -->
+	    	<div id="tt" class="easyui-tabs" style="width:1110px;height:500px;padding:0px;">  
+	    		<div title="Welcome">
+	    			<div id='home'>
+	    				<div id='advertise'><img src='../bootStrap/images/advertise.png'/></div>
+	    			</div>
+	    		</div>  
+			</div>
+		</div>
+	 </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+
+
+/*** Header ***/
+h1 #logo {
+	background: url(../images/Logo.png) top left no-repeat;
+	height: 62px;
+	width: 481px;
+	text-indent: -9999px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#menu {
+	float: left;
+	top:23px;
+	position:relative;
+	left:60px;
+}
+
+#menu a {
+	background: #FFF;
+	color: #67b2ff;
+	border: #AAA 3px solid;
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#menu a:hover {
+	background: #67b2ff;
+	color: #FFF;
+	border: #FFF 3px solid;
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#menu li {
+	float: left;
+}
+
+/*** Body Content ***/
+#wrapper {
+	width: 100%;
+	height: 60%;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	padding-bottom: 150px;
+	z-index:2;
+	background:skyblue;
+}
+
+#mask {
+	width: 400%;
+	height: 100%;
+}
+
+.box {
+	width: 25%;
+	height: 100%;
+	float: left;
+	z-index:100;
+}
+
+.content {
+	width: 960px;
+	height:470px;
+	top: 10%;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 35px;
+	-moz-border-radius: 35px;
+	-webkit-border-radius: 35px;
+	background:rgba(255,255,255, 0.3);
+	z-index:3;
+	/*background:url(resources/sky-bg.jpg);*/
+}
+
+.inner {
+	width: 920px;
+	height: 450px;
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	margin: 0px;
+	padding: 0px;
+	top: 1px;
+	position: relative;
+}

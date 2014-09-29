@@ -1,0 +1,58 @@
+body, html {
+	padding:0px;
+	margin:0px;
+}
+
+body {
+	scrollbar-face-color:#e9e9e9; 
+	scrollbar-arrow-color:#808080; 
+	scrollbar-track-color: #f2f2f2; 
+	scrollbar-highlight-color: #e9e9e9; 
+	scrollbar-3dlight-color: #ffffff; 
+	scrollbar-darkshadow-Color:#d3d3d3; 
+}
+
+
+#layout {
+	width:1355px;
+	height:635px;
+}
+
+#aa div ul >li {
+	margin-top:0px;
+}
+
+.leftmenu {
+	text-decoration:none;	
+	font-family:'youyuan','Î¢ÈíÑÅºÚ','ºÚÌå';
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}
+
+#home {
+	position:absolute;
+	width:1099px;
+	height:470px;
+	background:url("../../bootStrap/images/bg.png");
+}
+
+#advertise {
+	position:absolute;
+	right:100px;
+	top:70px;
+}
+
+#classControl {
+	width:100%;
+	height:50px;
+	padding:0px;
+}
+
+.conspan {
+	float:left;
+	margin-top:20px;
+	margin-left:25px;
+	height:26px;
+	width:90px;
+}

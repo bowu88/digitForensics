@@ -1,0 +1,59 @@
+@charset "utf-8";
+#sliders {
+	overflow: hidden;
+}
+
+#sliders>* {
+	display: none;
+}
+
+#titlebar {
+	float:right;
+	z-index: 100;
+	top: 100px;
+	margin-right:20px;
+	text-align: center;
+}
+
+#titlebar h1 {
+	z-index:100;
+	font-family: arial, sans-serif;
+	/*color: #37626F;*/
+	color:skyblue;
+	padding: 10px;
+	font-size: 60px;
+	letter-spacing: -2px;
+}
+
+.cloudbar {
+	position: absolute;
+	top: -465px;
+	right: 20px;
+	z-index: 190;
+	height: 325px;
+	width: 252px;
+	background: url('resources/cloud-bar.png') no-repeat bottom center;
+	opacity:0.7;
+}
+
+.cloud-padding {
+	padding: 20px;
+	text-align: center;
+}
+
+.cloud-padding p {
+	color: #F7F7F7;
+	font-family: "Lucida Grande", arial, sans-serif;
+	font-size: 13px;
+	line-height: 1.6em;
+}
+
+.cloud-padding h1 {
+	margin: 0px 0px 25px 0px;
+	padding: 0;
+	color: #37626F;
+	font-family: arial, sans-serif;
+	font-size: 26px;
+	font-weight:bold;
+	letter-spacing: -2px;
+}
